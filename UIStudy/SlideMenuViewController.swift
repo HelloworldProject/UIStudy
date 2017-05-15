@@ -12,7 +12,12 @@ import SlideMenuControllerSwift
 class SlideMenuViewController: SlideMenuController {
 
     override func awakeFromNib() {
-        <#code#>
+        
+//        self.mainViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController")
+//        self.leftViewController = self.storyboard?.instantiateViewController(withIdentifier: "LeftViewController")
+//        self.rightViewController = self.storyboard?.instantiateViewController(withIdentifier: "RightViewController")
+//        
+        super.awakeFromNib()
     }
     
     override func viewDidLoad() {

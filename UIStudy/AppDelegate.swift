@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,11 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // これはどのタイミングで呼ばれるのか？？
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let mainStoryboardaa = UIStoryboard(name: "Main", bundle: nil)
         
-        let mainViewController
+        let mainViewController: ViewController = mainStoryboardaa.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
+        let leftViewController: LeftViewController = mainStoryboardaa.instantiateViewController(withIdentifier: "LeftViewController") as! LeftViewController
+        let rightViewController: RightViewController = mainStoryboardaa.instantiateViewController(withIdentifier: "RightViewController") as! RightViewController
         
-        let slideMenuController: SlideMenuController = SlideMenuViewController(mainViewController: <#T##UIViewController#>, leftMenuViewController: <#T##UIViewController#>, rightMenuViewController: <#T##UIViewController#>)
+        let slideMenuControlleraa: SlideMenuController = SlideMenuController(mainViewController: mainViewController, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
+        
+//        self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
+        
+        // どういう状況？
+        self.window?.rootViewController = slideMenuControlleraa
+        self.window?.makeKeyAndVisible()
         
         return true
     }
