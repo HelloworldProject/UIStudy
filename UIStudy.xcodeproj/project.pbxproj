@@ -17,6 +17,7 @@
 		65F01BD71EC9A4B6009F420A /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F01BD61EC9A4B6009F420A /* SlideMenuControllerSwift.framework */; };
 		65F01BDA1EC9B823009F420A /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BD91EC9B823009F420A /* SlideMenuViewController.swift */; };
 		65F01BDC1ECA047B009F420A /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BDB1ECA047B009F420A /* LeftViewController.swift */; };
+		65F01BDE1ECA04D6009F420A /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BDD1ECA04D6009F420A /* RightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		65F01BD61EC9A4B6009F420A /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = Carthage/Build/iOS/SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
 		65F01BD91EC9B823009F420A /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		65F01BDB1ECA047B009F420A /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		65F01BDD1ECA04D6009F420A /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				65F01BB31EC9A03D009F420A /* Info.plist */,
 				65F01BD91EC9B823009F420A /* SlideMenuViewController.swift */,
 				65F01BDB1ECA047B009F420A /* LeftViewController.swift */,
+				65F01BDD1ECA04D6009F420A /* RightViewController.swift */,
 			);
 			path = UIStudy;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				65F01BAA1EC9A03D009F420A /* ViewController.swift in Sources */,
 				65F01BDC1ECA047B009F420A /* LeftViewController.swift in Sources */,
+				65F01BDE1ECA04D6009F420A /* RightViewController.swift in Sources */,
 				65F01BDA1EC9B823009F420A /* SlideMenuViewController.swift in Sources */,
 				65F01BA81EC9A03D009F420A /* AppDelegate.swift in Sources */,
 			);
