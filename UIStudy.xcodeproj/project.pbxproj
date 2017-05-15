@@ -14,6 +14,7 @@
 		65F01BB21EC9A03D009F420A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F01BB01EC9A03D009F420A /* LaunchScreen.storyboard */; };
 		65F01BBD1EC9A03D009F420A /* UIStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BBC1EC9A03D009F420A /* UIStudyTests.swift */; };
 		65F01BC81EC9A03E009F420A /* UIStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BC71EC9A03E009F420A /* UIStudyUITests.swift */; };
+		65F01BD71EC9A4B6009F420A /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F01BD61EC9A4B6009F420A /* SlideMenuControllerSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		65F01BC31EC9A03E009F420A /* UIStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F01BC71EC9A03E009F420A /* UIStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStudyUITests.swift; sourceTree = "<group>"; };
 		65F01BC91EC9A03E009F420A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65F01BD61EC9A4B6009F420A /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = Carthage/Build/iOS/SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F01BD71EC9A4B6009F420A /* SlideMenuControllerSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				65F01BBB1EC9A03D009F420A /* UIStudyTests */,
 				65F01BC61EC9A03E009F420A /* UIStudyUITests */,
 				65F01BA51EC9A03D009F420A /* Products */,
+				65F01BD51EC9A4B6009F420A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,14 @@
 			path = UIStudyUITests;
 			sourceTree = "<group>";
 		};
+		65F01BD51EC9A4B6009F420A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F01BD61EC9A4B6009F420A /* SlideMenuControllerSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +147,7 @@
 				65F01BA01EC9A03D009F420A /* Sources */,
 				65F01BA11EC9A03D009F420A /* Frameworks */,
 				65F01BA21EC9A03D009F420A /* Resources */,
+				65F01BD81EC9A4C0009F420A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -256,6 +269,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F01BD81EC9A4C0009F420A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SlideMenuControllerSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65F01BA01EC9A03D009F420A /* Sources */ = {
@@ -416,6 +446,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TT4AGJM7SQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = takeshi.fukunari.UIStudy;
@@ -429,6 +463,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = TT4AGJM7SQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UIStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = takeshi.fukunari.UIStudy;
@@ -514,6 +552,7 @@
 				65F01BCE1EC9A03E009F420A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65F01BCF1EC9A03E009F420A /* Build configuration list for PBXNativeTarget "UIStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +561,7 @@
 				65F01BD11EC9A03E009F420A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65F01BD21EC9A03E009F420A /* Build configuration list for PBXNativeTarget "UIStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +570,7 @@
 				65F01BD41EC9A03E009F420A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
