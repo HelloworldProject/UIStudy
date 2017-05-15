@@ -16,6 +16,7 @@
 		65F01BC81EC9A03E009F420A /* UIStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BC71EC9A03E009F420A /* UIStudyUITests.swift */; };
 		65F01BD71EC9A4B6009F420A /* SlideMenuControllerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F01BD61EC9A4B6009F420A /* SlideMenuControllerSwift.framework */; };
 		65F01BDA1EC9B823009F420A /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BD91EC9B823009F420A /* SlideMenuViewController.swift */; };
+		65F01BDC1ECA047B009F420A /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01BDB1ECA047B009F420A /* LeftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		65F01BC91EC9A03E009F420A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65F01BD61EC9A4B6009F420A /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = Carthage/Build/iOS/SlideMenuControllerSwift.framework; sourceTree = "<group>"; };
 		65F01BD91EC9B823009F420A /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		65F01BDB1ECA047B009F420A /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				65F01BB01EC9A03D009F420A /* LaunchScreen.storyboard */,
 				65F01BB31EC9A03D009F420A /* Info.plist */,
 				65F01BD91EC9B823009F420A /* SlideMenuViewController.swift */,
+				65F01BDB1ECA047B009F420A /* LeftViewController.swift */,
 			);
 			path = UIStudy;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65F01BAA1EC9A03D009F420A /* ViewController.swift in Sources */,
+				65F01BDC1ECA047B009F420A /* LeftViewController.swift in Sources */,
 				65F01BDA1EC9B823009F420A /* SlideMenuViewController.swift in Sources */,
 				65F01BA81EC9A03D009F420A /* AppDelegate.swift in Sources */,
 			);
