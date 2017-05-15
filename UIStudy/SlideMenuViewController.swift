@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SlideMenuControllerSwift
 
-class SlideMenuViewController: UIViewController {
+class SlideMenuViewController: SlideMenuController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
