@@ -14,8 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    // これはどのタイミングで呼ばれるのか？？
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        var mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let mainViewController
+        
+        let slideMenuController: SlideMenuController = SlideMenuViewController(mainViewController: <#T##UIViewController#>, leftMenuViewController: <#T##UIViewController#>, rightMenuViewController: <#T##UIViewController#>)
+        
         return true
     }
 
